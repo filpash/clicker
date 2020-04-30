@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Crimson+Text:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Clicker</title>
+</head>
+<body>
+<!--Preloader-->
+<!--<div class="preloader">
+        <div class="counter">0</div>
+</div>-->
+<!--main_page-->
+<div id="container-game">
+<div class="row">
+    <div class="field-one">
+<!--vaccine research-->
+        <h3 class="title-stamps">vaccine research</h3>
+        <div class="btn-group" role="group" aria-label="...">
+            <button id="btn-mes-one" class="btn btn-one" type="button" title="Штамп вакцины I-й категории">I</button>
+            <button id="btn-mes-two" class="btn btn-two" type="button" title="Штамп вакцины II-й категории">I I</button>
+            <button id="btn-mes-three" class="btn btn-three" type="button" title="Штамп вакцины III-й категории">I I I</button>
+        </div>
+<!--actions-->
+        <h3 class="title-actions">actions</h3>
+        <div class="btn-group-vertical">
+            <button class="btn btn-two" type="button">Закрыть границы страны</button>
+            <button class="btn btn-two" type="button">Закрыть области</button>
+            <button class="btn btn-two" type="button">Ввести ЧС</button>
+            <button class="btn btn-two" type="button">Ввести карантин</button>
+            <button class="btn btn-two" type="button">Закрыть возд границы</button>
+            <button class="btn btn-two" type="button">Действие</button>
+            <button class="btn btn-two" type="button">Действие</button>
+            <button class="btn btn-two" type="button">Действие</button>
+            <button class="btn btn-two" type="button">Действие</button>
+        </div>
+<!--button humanitarian assistance request-->
+
+        <h3 class="title-actions">humanitarian help</h3>
+        <div class="btn-hum_help">
+            <button class="btn-help" type="button">
+                запрос о помощи
+            </button>
+        </div>
+
+    </div>
+
+<!--column-2-->
+    <div class="field-two">
+        <div class="time-field">
+            Время:<input id="timer" value="0" type="text">
+        </div>
+        <div class="static-field">
+
+                <div class="border-range">
+                    <label class="population-text">Население:</label>
+                    <input id="popCount" type="text" value="0">
+
+                    <label class="health-text">Здоровы:</label>
+                    <input id="healthCount" type="text" value="0">
+
+                    <label class="infected-text">Заражены:</label>
+                    <input id="infectCount" type="text" value="0">
+
+                    <label class="dead-text">Мертвы:</label>
+                    <input id="deadCount" type="text" value="0">
+
+                    <label class="recover-text">Выздоровели:</label>
+                    <input id="recCount" type="text" value="0">
+                </div>
+
+<!--Карты нет, лови фигу-->
+            <img src="https://i.imgur.com/CJksMTB.jpg" alt="figa" style="width: 100%; margin-top: 10px">
+        </div>
+    </div>
+
+<!--column-3-->
+    <div class="field-three">
+        <div class="btn-group-vertical">
+            <button class="btn btn-one" type="button">Мед. поинты</button>
+            <button class="btn btn-two" type="button">Поинты развития</button>
+            <button class="btn btn-three" type="button">Наличие вакцины</button>
+        </div>
+
+        <h3 class="title-bank">Bank</h3>
+        <div class="border-bank">
+            <div class="border-count">
+                <label class="count-in-sec">Доход:</label>
+                <input id="countInSec" type="text" value="0">
+            </div>
+            <div class="border-balance">
+                <label class="balance">Баланс:</label>
+                <input id="balance" type="text" value="1000000">
+            </div>
+            <div class="border-btn-group">
+                <button class="credit-button" type="button">Взять кредит</button>
+                <button class="reserve" type="button">Использовать резерв</button>
+            </div>
+        </div>
+
+        <div class="button-market">
+            <button class="btn-market">Торговать</button>
+        </div>
+
+<!--Profit-->
+        <h3 class="title-profit">Profit</h3>
+        <div class="profit-field">
+            <!--tax-->
+            <button class="btn-tax" type="button">
+                Tax 20k+1th
+            </button>
+            <input id="tax" type="text" value="1">
+            <label class="tax">+100k/month</label>
+            <!--shop-->
+            <button class="btn-shop" type="button">
+                Shop
+            </button>
+            <input id="shop" type="text" value="1">
+            <label class="shop">+200$/day</label>
+            <!--shopping center-->
+            <button class="btn-center" type="button">
+                shop center
+            </button>
+            <input id="center" type="text" value="1">
+            <label class="center">+0/week</label>
+            <!--hospitals-->
+            <button class="btn-hospitals" type="button">
+                hospitals
+            </button>
+            <input id="hospitals" type="text" value="1">
+            <label class="hospitals">+0 time/2week</label>
+            <!--amusement park-->
+            <button class="btn-park" type="button">
+                amus.park
+            </button>
+            <input id="park" type="text" value="1">
+            <label class="park">+1 time/3 days</label>
+            <!--harvest sale-->
+            <button class="btn-sale" type="button">
+                harvest sale
+            </button>
+            <input id="sale" type="text" value="1">
+            <label class="sale">+0 time/year</label>
+            <!--spa-->
+            <button class="btn-spa" type="button">
+                spa
+            </button>
+            <input id="spa" type="text" value="1">
+            <label class="spa">+0 time/2month</label>
+        </div>
+    </div>
+
+<!--news line-->
+    <div class="footer-blocks">
+        <div class="action-field">
+
+            <div class="border-actions">
+                <label class="days-text">Прошло дней:</label>
+                <input id="daysCount" type="text" value="0">
+
+                <label class="total-text">Прошло времени:</label>
+                <input id="totalCount" type="text" value="0">
+
+                <label class="event-text">Таймер событий:</label>
+                <input id="eventCount" type="text" value="0">
+            </div>
+
+        </div>
+
+        <div class="action-news">
+            <a class="btn btn-start" type="submit" onclick="start()"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <a class="btn btn-pause" type="submit" onclick="stop()"><i class="fa fa-pause" aria-hidden="true"></i></a>
+
+            <div class="news-field">
+                <label class="news-field-text">Новостная лента</label>
+            </div>
+
+            <a class="btn btn-exit" href="menu.html" type="submit">
+                Exit
+            </a>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--scripts-->
+<script type="text/javascript" src="js/game.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>
