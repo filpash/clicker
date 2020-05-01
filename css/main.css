@@ -735,12 +735,58 @@ p {
     display: inline-block;
 }
 
+.btn-one_1 {
+    background: #4ECDC4;
+    border-radius: 30px;
+    padding: 15px 19px 15px 19px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-one_1:hover {
+    background: #a7e5e0;
+    transition: all 1s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-two_2 {
+    background: cadetblue;
+    border-radius: 30px;
+    padding: 15px 19px 15px 19px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-two_2:hover {
+    background: #4ECDC4;
+    transition: all 1s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-three_3 {
+    background: #be9ddf;
+    border-radius: 30px;
+    padding: 15px 19px 15px 19px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-three_3:hover {
+    background: #f2d2ec;
+    transition: all 1s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#hospital-1,
+#hospital-2,
+#hospital-3 {
+    color: #fff;
+}
+
 .btn-one{
     background: #4ECDC4;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 53px 5px 53px;
     text-transform: uppercase;
     font-weight: 600;
     color: #f5f5f5;
+    margin-bottom: 4px;
 }
 
 .btn-one:hover{
@@ -750,14 +796,42 @@ p {
 }
 
 .btn-group-vertical {
-    width: 87%;
+    width: 80%;
+    border: 4px solid #f6da73;
+    padding: 4px;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.group-buttons {
+    width: 95%;
+    border: 4px solid #f6da73;
+    padding: 4px;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-two-2{
+    background: #f6da73;
+    padding: 5px 29px 5px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.btn-two-2:hover{
+    background: #fcf3b5;
+    transition: all 1s ease;
+    box-shadow: inset 0 0 0 3px #f7c73f;
 }
 
 .btn-two{
     background: #f6da73;
     text-transform: uppercase;
     font-weight: 600;
-    color: #f5f5f5;
+    color: #556270;
+    margin-bottom: 4px;
 }
 
 .btn-two:hover{
@@ -767,17 +841,17 @@ p {
 }
 
 .btn-three{
-    background: #e54044;
-    padding: 5px 25px 5px 25px;
+    background: #4ECDC4;
+    padding: 5px 30px 5px 30px;
     text-transform: uppercase;
     color: #f5f5f5;
     font-weight: 600;
 }
 
 .btn-three:hover{
-    background: #f9939d;
+    background: #a7e5e0;
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #e54044;
+    box-shadow: inset 0 0 0 3px #4ECDC4;
 }
 
 .title-stamps {
@@ -811,12 +885,13 @@ p {
     text-shadow: #ffffff -1px -1px 0;
     font-size: 20px;
     padding: 5px 15px 5px 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-pause:hover {
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #fadb50;
     background: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-start {
@@ -825,12 +900,13 @@ p {
     text-shadow: #ffffff -1px -1px 0;
     font-size: 20px;
     padding: 5px 15px 5px 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-start:hover {
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #4ECDC4;
-    background: #ffffff;
+    background: #fcf3b5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn .btn-exit {
@@ -843,11 +919,14 @@ p {
     text-shadow: #ffffff -1px -1px 0;
     font-size: 20px;
     padding: 5px 20px 5px 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-exit:hover {
+    background: #a7e5e0;
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #e54044;
+    color: black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .border-range {
@@ -857,26 +936,23 @@ p {
     background-color: #ffffff;
     border-radius: 50px;
     padding: 2px 0 2px 0;
-
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-#popCount,
-#healthCount,
-#infectCount,
-#deadCount,
-#recCount,
-#daysCount,
-#totalCount,
-#eventCount {
-    display: inline-block;
-    width: 50px;
-    text-align: left;
-    padding-left: 5px;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    height: 20px;
-    border: 0;
+.output-days,
+.output-total,
+.output-event {
+    width: 0;
+    padding-right: 10px;
+}
+
+.population,
+.health,
+.infect,
+.dead,
+.recover {
+    width: 0;
+    margin-right: 40px;
 }
 
 label{
@@ -939,46 +1015,43 @@ label{
 
 .border-actions {
     display: inline-block;
-    width: 92%;
+    width: 76%;
     border: 3px solid #f6da73;
     background-color: #ffffff;
     border-radius: 4px;
-    padding: 4px 0 4px 120px;
+    padding: 7px 0 7px 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .border-bank {
     background: #fff;
     border-radius: 4px;
-    width: 90%;
-    border: 4px solid #f9939d;
+    width: 95%;
+    border: 4px solid #4ECDC4;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .credit-button {
     margin-left: 14px;
-    padding: 5px 48px 5px 48px;
+    padding: 5px 72px 5px 72px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: 0;
-    background: #e54044;
+    background: #be9ddf;
     text-transform: uppercase;
     font-weight: 600;
     color: #f5f5f5;
 }
 
 .credit-button:hover {
-    background: #f9939d;
+    color: black;
+    background: #be9ddf;
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #e54044;
+    box-shadow: inset 0 0 0 3px #9579d1;
 }
 
 .border-count {
     margin-top: 10px;
-}
-
-#countInSec {
-    width: 60%;
-    border-color: #f9939d;
-    padding-left: 5px;
 }
 
 .count-in-sec {
@@ -987,36 +1060,31 @@ label{
 
 .reserve {
     margin-left: 14px;
-    padding: 6px 10px 6px 12px;
+    padding: 6px 72px 6px 72px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: 0;
-    background: #4ECDC4;
+    background: #f6da73;
     text-transform: uppercase;
     font-weight: 600;
     color: #f5f5f5;
 }
 
 .reserve:hover {
-    background: #a7e5e0;
+    background: #fcf3b5;
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #4ECDC4;
+    box-shadow: inset 0 0 0 3px #f6da73;
+    color: black;
 }
 
 .balance {
     margin-left: 14px;
 }
 
-#balance {
-    width: 58%;
-    padding-left: 5px;
-    border-color: #f9939d;
-}
-
 .title-bank {
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Bangers', cursive;
-    color: #556270;
+    color: black;
     text-shadow: #a7e5e0 -1px -1px 0;
     margin-left: 100px;
 }
@@ -1028,22 +1096,22 @@ label{
 }
 
 .btn-market {
-    margin-left: 10px;
-    padding: 7px 66px 7px 65px;
+    padding: 7px 71px 7px 71px;
     margin-bottom: 10px;
     border-radius: 4px;
     border: 0;
-    background: #f6da73;
+    background: #4ECDC4;
     text-transform: uppercase;
     font-weight: 600;
     color: #f5f5f5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-market:hover {
-    background: #fcf3b5;
+    background: #a7e5e0;
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #f6da73;
     color: black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /*Profit*/
@@ -1053,6 +1121,7 @@ label{
     color: #556270;
     text-shadow: #a7e5e0 -1px -1px 0;
     margin-left: 100px;
+    margin-top: 25px;
 }
 
 .profit-field {
@@ -1062,60 +1131,67 @@ label{
     border: 4px solid #f6da73;
     border-radius: 4px;
     margin-right: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-tax {
     margin-left: 5px;
-    padding: 3px 9px 3px 9px;
+    padding: 3px 12px 3px 12px;
     border-radius: 4px;
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 4px;
 }
 
 .btn-shop {
     margin-left: 5px;
-    padding: 3px 27px 3px 27px;
+    padding: 3px 30px 3px 30px;
     border-radius: 4px;
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 4px;
 }
 
 .btn-center {
     margin-left: 5px;
-    padding: 3px 9px 3px 9px;
+    padding: 3px 11px 3px 11px;
     border-radius: 4px;
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 4px;
 }
 
 .btn-hospitals {
     margin-left: 5px;
-    padding: 3px 15px 3px 15px;
+    padding: 3px 17px 3px 17px;
     border-radius: 4px;
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 4px;
 }
 
 .btn-park {
     margin-left: 5px;
-    padding: 3px 13px 3px 13px;
+    padding: 3px 14px 3px 15px;
     border-radius: 4px;
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 4px;
 }
 
 .btn-spa {
     margin-left: 5px;
-    padding: 3px 27px 3px 27px;
+    padding: 3px 34px 3px 34px;
     border-radius: 4px;
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 10px;
 }
 
 .btn-sale {
@@ -1125,6 +1201,7 @@ label{
     border: 0;
     background: #f6da73;
     color: #556270;
+    margin-bottom: 2px;
 }
 
 .btn-tax:hover,
@@ -1139,13 +1216,12 @@ label{
     box-shadow: inset 0 0 0 3px #f6da73;
 }
 
-#tax,
-#shop,
-#center,
-#hospitals,
-#park,
-#spa,
-#sale {
+.tax, .shop, .center, .hospitals, .park, .sale, .spa {
+    padding-left: 0;
+    width: 40%;
+}
+
+output {
     width: 20%;
     padding-left: 17px;
 }
@@ -1156,11 +1232,12 @@ label{
 
 .news-field {
     display: inline-block;
-    width: 74%;
+    width: 94%;
     border: 3px solid #f6da73;
     background-color: #ffffff;
     border-radius: 4px;
     padding: 8px 0 6px 22px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /*assistance request button*/
@@ -1171,15 +1248,17 @@ label{
     margin-bottom: 10px;
     border-radius: 4px;
     border: 0;
-    background: #e54044;
+    background: #4ECDC4;
     text-transform: uppercase;
     font-weight: 600;
     color: #f5f5f5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .btn-help:hover {
-    background: #f9939d;
+    background: #a7e5e0;
     transition: all 1s ease;
-    box-shadow: inset 0 0 0 3px #e54044;
+    box-shadow: inset 0 0 0 3px #4ECDC4;
     color: black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }

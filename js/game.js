@@ -23,23 +23,6 @@ function counter() {
 }
 counter()
 
-// counter game-time
-
-//Эта функция запускает таймер
-function start() {
-    window.timerId = window.setInterval(timer, 1000);
-}
-//Эта функция останавливает таймер
-function stop() {
-    window.clearInterval(window.timerId);
-}
-
-//Эта функция меняет value для инпута
-function timer() {
-    var elem = document.getElementById('timer');
-    elem.value = parseInt(elem.value)+1;
-}
-
 //messages
 
 $('#btn-mes-one').tooltip();

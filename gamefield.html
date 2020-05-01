@@ -21,10 +21,10 @@
     <div class="field-one">
 <!--vaccine research-->
         <h3 class="title-stamps">vaccine research</h3>
-        <div class="btn-group" role="group" aria-label="...">
-            <button id="btn-mes-one" class="btn btn-one" type="button" title="Штамп вакцины I-й категории">I</button>
-            <button id="btn-mes-two" class="btn btn-two" type="button" title="Штамп вакцины II-й категории">I I</button>
-            <button id="btn-mes-three" class="btn btn-three" type="button" title="Штамп вакцины III-й категории">I I I</button>
+        <div class="btn_group" role="group" aria-label="...">
+            <button  class="btn btn-one_1" type="button" title="Штамп вакцины I-й категории"><i id="hospital-1" class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
+            <button  class="btn btn-two_2" type="button" title="Штамп вакцины II-й категории"><i id="hospital-2"class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
+            <button  class="btn btn-three_3" type="button" title="Штамп вакцины III-й категории"><i id="hospital-3" class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
         </div>
 <!--actions-->
         <h3 class="title-actions">actions</h3>
@@ -43,68 +43,62 @@
 
         <h3 class="title-actions">humanitarian help</h3>
         <div class="btn-hum_help">
-            <button class="btn-help" type="button">
-                запрос о помощи
-            </button>
+            <button class="btn-help" type="button"><i class="fa fa-handshake-o" aria-hidden="true"></i> запрос о помощи</button>
         </div>
 
     </div>
 
 <!--column-2-->
     <div class="field-two">
-        <div class="time-field">
-            Время:<input id="timer" value="0" type="text">
-        </div>
         <div class="static-field">
 
                 <div class="border-range">
                     <label class="population-text">Население:</label>
-                    <input id="popCount" type="text" value="0">
+                    <output class="population" name="population">0</output>
 
                     <label class="health-text">Здоровы:</label>
-                    <input id="healthCount" type="text" value="0">
+                    <output class="health" name="health">0</output>
 
                     <label class="infected-text">Заражены:</label>
-                    <input id="infectCount" type="text" value="0">
+                    <output class="infect" name="infected">0</output>
 
                     <label class="dead-text">Мертвы:</label>
-                    <input id="deadCount" type="text" value="0">
+                    <output class="dead" name="dead">0</output>
 
                     <label class="recover-text">Выздоровели:</label>
-                    <input id="recCount" type="text" value="0">
+                    <output class="recover" name="recover">0</output>
                 </div>
 
-<!--Карты нет, лови фигу-->
-            <img src="https://i.imgur.com/CJksMTB.jpg" alt="figa" style="width: 100%; margin-top: 10px">
         </div>
     </div>
 
 <!--column-3-->
     <div class="field-three">
-        <div class="btn-group-vertical">
-            <button class="btn btn-one" type="button">Мед. поинты</button>
-            <button class="btn btn-two" type="button">Поинты развития</button>
-            <button class="btn btn-three" type="button">Наличие вакцины</button>
+        <div class="group-buttons">
+            <button class="btn btn-one" type="button"><i class="fa fa-plus-square" aria-hidden="true"></i> Мед. поинты</button>
+            <button class="btn btn-two-2" type="button"><i class="fa fa-line-chart" aria-hidden="true"></i> Поинты развития</button>
+            <button class="btn btn-three" type="button"><i class="fa fa-medkit" aria-hidden="true"></i> Наличие вакцины</button>
         </div>
 
         <h3 class="title-bank">Bank</h3>
         <div class="border-bank">
             <div class="border-count">
-                <label class="count-in-sec">Доход:</label>
-                <input id="countInSec" type="text" value="0">
+                <label class="count-in-sec">Доход/мин:</label>
+                <output name="count">1</output>
             </div>
             <div class="border-balance">
-                <label class="balance">Баланс:</label>
-                <input id="balance" type="text" value="1000000">
+                <label class="balance">Бюджет:</label>
+                <output name="balance">1000000</output>
             </div>
             <div class="border-btn-group">
-                <button class="credit-button" type="button">Взять кредит</button>
-                <button class="reserve" type="button">Использовать резерв</button>
+                <button class="credit-button" type="button">% кредит</button>
+                <button class="reserve" type="button"><i class="fa fa-cc-visa" aria-hidden="true"></i> Резерв</button>
+                <i class="fas fa-coins"></i>
             </div>
         </div>
 
         <div class="button-market">
-            <button class="btn-market">Торговать</button>
+            <button class="btn-market"><i class="fa fa-balance-scale" aria-hidden="true"></i> Торговать</button>
         </div>
 
 <!--Profit-->
@@ -114,44 +108,44 @@
             <button class="btn-tax" type="button">
                 Tax 20k+1th
             </button>
-            <input id="tax" type="text" value="1">
-            <label class="tax">+100k/month</label>
+            <output name="1">1</output>
+            <output class="tax" name="tax">+100k/month</output>
             <!--shop-->
             <button class="btn-shop" type="button">
                 Shop
             </button>
-            <input id="shop" type="text" value="1">
-            <label class="shop">+200$/day</label>
+            <output name="2">2</output>
+            <output class="shop" name="shop">+200$/day</output>
             <!--shopping center-->
             <button class="btn-center" type="button">
                 shop center
             </button>
-            <input id="center" type="text" value="1">
-            <label class="center">+0/week</label>
+            <output name="3">3</output>
+            <output class="center" name="center">+0/week</output>
             <!--hospitals-->
             <button class="btn-hospitals" type="button">
                 hospitals
             </button>
-            <input id="hospitals" type="text" value="1">
-            <label class="hospitals">+0 time/2week</label>
+            <output name="4">4</output>
+            <output class="hospitals" name="hospital">+0 time/2week</output>
             <!--amusement park-->
             <button class="btn-park" type="button">
                 amus.park
             </button>
-            <input id="park" type="text" value="1">
-            <label class="park">+1 time/3 days</label>
+            <output name="5">5</output>
+            <output class="park" name="park">+1 time/3 days</output>
             <!--harvest sale-->
             <button class="btn-sale" type="button">
                 harvest sale
             </button>
-            <input id="sale" type="text" value="1">
-            <label class="sale">+0 time/year</label>
+            <output name="6">6</output>
+            <output class="sale" name="sale">+0 time/year</output>
             <!--spa-->
             <button class="btn-spa" type="button">
                 spa
             </button>
-            <input id="spa" type="text" value="1">
-            <label class="spa">+0 time/2month</label>
+            <output name="8">7</output>
+            <output class="spa" name="spa">+0 time/2month</output>
         </div>
     </div>
 
@@ -159,15 +153,8 @@
     <div class="footer-blocks">
         <div class="action-field">
 
-            <div class="border-actions">
-                <label class="days-text">Прошло дней:</label>
-                <input id="daysCount" type="text" value="0">
-
-                <label class="total-text">Прошло времени:</label>
-                <input id="totalCount" type="text" value="0">
-
-                <label class="event-text">Таймер событий:</label>
-                <input id="eventCount" type="text" value="0">
+            <div class="news-field">
+                <label class="news-field-text">История событий</label>
             </div>
 
         </div>
@@ -176,10 +163,19 @@
             <a class="btn btn-start" type="submit" onclick="start()"><i class="fa fa-play" aria-hidden="true"></i></a>
             <a class="btn btn-pause" type="submit" onclick="stop()"><i class="fa fa-pause" aria-hidden="true"></i></a>
 
-            <div class="news-field">
-                <label class="news-field-text">Новостная лента</label>
-            </div>
+            <div class="border-actions">
+                <label class="days-text">Время:</label>
+                <output class="output-days" name="days">0</output>
 
+                <label class="days-text">Текущая дата:</label>
+                <output class="output-days" name="days">0</output>
+
+                <label class="total-text">У власти/сутки:</label>
+                <output class="output-total" name="total">0</output>
+
+                <label class="event-text">Время заражения/дней:</label>
+                <output class="output-event" name="event">0</output>
+            </div>
             <a class="btn btn-exit" href="menu.html" type="submit">
                 Exit
             </a>
@@ -191,5 +187,6 @@
 <!--scripts-->
 <script type="text/javascript" src="js/game.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://use.fontawesome.com/ab0029e20e.js"></script>
 </body>
 </html>
