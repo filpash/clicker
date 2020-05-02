@@ -12,20 +12,23 @@
 </head>
 <body>
 <!--Preloader-->
-<div class="preloader">
+<!--<div class="preloader">
     <video src="video/Pexels%20Videos%203694.mp4" autoplay muted>
         <div class="counter">0</div>
     </video>
-</div>
+</div>-->
 <!--main_page-->
 <div id="container-game">
 <div class="row">
     <div class="field-one">
+        <div class="username_field">
+            <p class="username-text">UserName</p>
+        </div>
 <!--vaccine research-->
         <h3 class="title-stamps">vaccine research</h3>
         <div class="btn_group" role="group" aria-label="...">
             <button  class="btn btn-one_1" type="button" title="Штамп вакцины I-й категории"><i id="hospital-1" class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
-            <button  class="btn btn-two_2" type="button" title="Штамп вакцины II-й категории"><i id="hospital-2"class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
+            <button  class="btn btn-two_2" type="button" title="Штамп вакцины II-й категории"><i id="hospital-2" class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
             <button  class="btn btn-three_3" type="button" title="Штамп вакцины III-й категории"><i id="hospital-3" class="fa fa-hospital-o fa-lg" aria-hidden="true"></i></button>
         </div>
 <!--actions-->
@@ -76,6 +79,12 @@
 
 <!--column-3-->
     <div class="field-three">
+        <div class="navigation-btn">
+            <a class="btn btn-start" type="submit" onclick="start()"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <a class="btn btn-pause" type="submit" onclick="stop()"><i class="fa fa-pause" aria-hidden="true"></i></a>
+            <a class="btn btn-exit" href="menu.html" type="submit">Exit</a>
+        </div>
+
         <div class="group-buttons">
             <button class="btn btn-one" type="button"><i class="fa fa-plus-square" aria-hidden="true"></i> Мед. поинты</button>
             <button class="btn btn-two-2" type="button"><i class="fa fa-line-chart" aria-hidden="true"></i> Поинты развития</button>
@@ -90,7 +99,7 @@
             </div>
             <div class="border-balance">
                 <label class="balance">Бюджет:</label>
-                <output name="balance">1000000</output>
+                <output name="balance"></output>
             </div>
             <div class="border-btn-group">
                 <button class="credit-button" type="button">% кредит</button>
@@ -100,7 +109,7 @@
         </div>
 
         <div class="button-market">
-            <button class="btn-market"><i class="fa fa-balance-scale" aria-hidden="true"></i> Торговать</button>
+            <button id="btn_sale" class="btn-market"><i class="fa fa-balance-scale" aria-hidden="true"></i> Торговать</button>
         </div>
 
 <!--Profit-->
@@ -162,8 +171,7 @@
         </div>
 
         <div class="action-news">
-            <a class="btn btn-start" type="submit" onclick="start()"><i class="fa fa-play" aria-hidden="true"></i></a>
-            <a class="btn btn-pause" type="submit" onclick="stop()"><i class="fa fa-pause" aria-hidden="true"></i></a>
+
 
             <div class="border-actions">
                 <label class="days-text">Время:</label>
@@ -178,9 +186,7 @@
                 <label class="event-text">Время заражения/дней:</label>
                 <output class="output-event" name="event">0</output>
             </div>
-            <a class="btn btn-exit" href="menu.html" type="submit">
-                Exit
-            </a>
+
         </div>
     </div>
 

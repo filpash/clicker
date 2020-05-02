@@ -1,13 +1,3 @@
-//button-active
-
-document.body.addEventListener('click', e => {
-    if (!e.target.matches('button')) return
-    document.querySelector('.pic img').src = e.target.dataset.src
-
-    document.querySelectorAll('button').forEach(btn => btn.classList.remove('active'))
-    e.target.classList.add('active')
-})
-
 // counter preloader
 
 function counter() {
@@ -23,10 +13,11 @@ function counter() {
 }
 counter()
 
+
 //messages
 
-$('#btn-mes-one').tooltip();
+/*$('#btn-mes-one').tooltip();
 $('#btn-mes-two').tooltip();
-$('#btn-mes-three').tooltip();
+$('#btn-mes-three').tooltip();*/
 
 
